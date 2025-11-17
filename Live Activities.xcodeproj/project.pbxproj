@@ -10,6 +10,7 @@
 		3A734F7B2ECA234100BFF23E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A734F7A2ECA234100BFF23E /* WidgetKit.framework */; };
 		3A734F7D2ECA234100BFF23E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A734F7C2ECA234100BFF23E /* SwiftUI.framework */; };
 		3A734F8E2ECA234200BFF23E /* LiveActivitiesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3A734F782ECA234100BFF23E /* LiveActivitiesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3AC9DD922ECB3667000CF0B9 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9DD912ECB3667000CF0B9 /* AppIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		3A734F7A2ECA234100BFF23E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		3A734F7C2ECA234100BFF23E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		3A734F952ECA242A00BFF23E /* LiveActivitiesExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiveActivitiesExtension.entitlements; sourceTree = "<group>"; };
+		3AC9DD912ECB3667000CF0B9 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -113,6 +115,7 @@
 		3A734F5C2ECA229200BFF23E = {
 			isa = PBXGroup;
 			children = (
+				3AC9DD912ECB3667000CF0B9 /* AppIcon.icon */,
 				3A734F952ECA242A00BFF23E /* LiveActivitiesExtension.entitlements */,
 				3A734F672ECA229200BFF23E /* Live Activities */,
 				3A734F7E2ECA234100BFF23E /* LiveActivities */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC9DD922ECB3667000CF0B9 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +405,7 @@
 				DEVELOPMENT_TEAM = F6KJ6KKPZT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Steps;
 				INFOPLIST_KEY_NSMotionUsageDescription = "This app uses motion data to track your steps and distance.";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
@@ -409,6 +414,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +443,7 @@
 				DEVELOPMENT_TEAM = F6KJ6KKPZT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Steps;
 				INFOPLIST_KEY_NSMotionUsageDescription = "This app uses motion data to track your steps and distance.";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
@@ -445,6 +452,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
