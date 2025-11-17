@@ -47,13 +47,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3A734F8F2ECA234200BFF23E /* Exceptions for "LiveActivities" folder in "LiveActivitiesExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 3A734F772ECA234100BFF23E /* LiveActivitiesExtension */;
-		};
 		3A734FA42ECA25F600BFF23E /* Exceptions for "Live Activities" folder in "LiveActivitiesExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -61,14 +54,6 @@
 				StepTracker.swift,
 			);
 			target = 3A734F772ECA234100BFF23E /* LiveActivitiesExtension */;
-		};
-		3A734FA82ECA261C00BFF23E /* Exceptions for "LiveActivities" folder in "Live Activities" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				AppIntent.swift,
-				StepActivityAttributes.swift,
-			);
-			target = 3A734F642ECA229200BFF23E /* Live Activities */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -81,13 +66,9 @@
 			path = "Live Activities";
 			sourceTree = "<group>";
 		};
-		3A734F7E2ECA234100BFF23E /* LiveActivities */ = {
+		3A734F7E2ECA234100BFF23E /* StepLiveActivityExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3A734FA82ECA261C00BFF23E /* Exceptions for "LiveActivities" folder in "Live Activities" target */,
-				3A734F8F2ECA234200BFF23E /* Exceptions for "LiveActivities" folder in "LiveActivitiesExtension" target */,
-			);
-			path = LiveActivities;
+			path = StepLiveActivityExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -118,7 +99,7 @@
 				3AC9DD912ECB3667000CF0B9 /* AppIcon.icon */,
 				3A734F952ECA242A00BFF23E /* LiveActivitiesExtension.entitlements */,
 				3A734F672ECA229200BFF23E /* Live Activities */,
-				3A734F7E2ECA234100BFF23E /* LiveActivities */,
+				3A734F7E2ECA234100BFF23E /* StepLiveActivityExtension */,
 				3A734F792ECA234100BFF23E /* Frameworks */,
 				3A734F662ECA229200BFF23E /* Products */,
 			);
@@ -182,7 +163,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3A734F7E2ECA234100BFF23E /* LiveActivities */,
+				3A734F7E2ECA234100BFF23E /* StepLiveActivityExtension */,
 			);
 			name = LiveActivitiesExtension;
 			packageProductDependencies = (
