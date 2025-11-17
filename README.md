@@ -2,6 +2,7 @@
 
 A real-time step tracking iOS app that leverages **Live Activities** and **Dynamic Island** to display your step count, distance, and progress directly on your Lock Screen and Dynamic Island.
 
+
 ## Features
 
 ### 🏃‍♂️ Real-Time Step Tracking
@@ -28,6 +29,11 @@ A real-time step tracking iOS app that leverages **Live Activities** and **Dynam
 
 ## Screenshots
 
+<img width="3840" height="2160" alt="title screen" src="https://github.com/user-attachments/assets/44d51a96-3914-4e30-a9cf-871a75b8ee9e" />
+
+<img width="3840" height="2160" alt="live activities" src="https://github.com/user-attachments/assets/726cc79a-d50a-4282-a6cc-c673ecfae066" />
+
+
 ### Lock Screen
 - Status badge (In Progress/Paused)
 - Large step count display
@@ -41,6 +47,7 @@ A real-time step tracking iOS app that leverages **Live Activities** and **Dynam
 
 ## Requirements
 
+- iOS 26 or later (for glass buttons)
 - iOS 16.2 or later (for frequent updates)
 - iOS 16.1 or later (for Live Activities)
 - Physical device (Live Activities don't work in Simulator)
@@ -75,16 +82,26 @@ open Live Activities.xcodeproj
 ```
 Live Activities/
 ├── LiveActivities/              # Main app
+│   ├── Assets.xcassets/        # App icons and images
 │   ├── ContentView.swift        # Main UI
 │   ├── StepTracker.swift        # Step tracking logic
 │   └── Info.plist              # App configuration
 │
 ├── StepLiveActivityExtension/   # Live Activity extension
-│   ├── StepLiveActivity.swift  # Live Activity UI
-│   └── Info.plist              # Extension configuration
+│   ├── AppIntent.swift         # App Intent handling
+│   ├── Assets.xcassets/        # Extension assets
+│   ├── LiveActivitiesBundle.swift          # Widget bundle
+│   ├── LockScreenLiveActivityView.swift    # Lock Screen UI
+│   ├── StepActivityAttributes.swift        # Activity data model
+│   ├── StepLiveActivity.swift              # Main Live Activity widget
+│   ├── StepLiveActivityControl.swift       # Interactive controls
+│   ├── StepLiveActivityDefault.swift       # Default configurations
+│   └── Info.plist                          # Extension configuration
 │
-└── Shared/
-    └── StepActivityAttributes.swift  # Shared data model
+├── StepActivitiesExtension.entitlements    # Extension entitlements
+├── README.md                               # Project documentation
+├── LICENSE                                 # MIT License
+└── AppIcon                                 # App icon file
 ```
 
 ## Configuration
@@ -244,16 +261,6 @@ This app uses **Frequent Updates** to achieve ~1Hz update rate on the Lock Scree
 - [ ] Calorie estimation
 - [ ] Social sharing features
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -262,8 +269,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Apple's [ActivityKit documentation](https://developer.apple.com/documentation/activitykit)
 - SF Symbols for icons
+- Icon Composer for the App Icon
 - CoreMotion framework for step tracking
 
 ---
 
-Made with ❤️ using SwiftUI and ActivityKit
+Made with ❤️ using SwiftUI, ActivityKit and WidgetKit
