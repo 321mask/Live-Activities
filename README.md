@@ -50,13 +50,13 @@ A real-time step tracking iOS app that leverages **Live Activities** and **Dynam
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/step-tracking-live-activities.git
-cd step-tracking-live-activities
+git clone https://github.com/321mask/Live-Activities.git
+cd Live-Activities
 ```
 
 2. Open the project in Xcode 15 or later:
 ```bash
-open LiveActivities.xcodeproj
+open Live Activities.xcodeproj
 ```
 
 3. Configure your development team:
@@ -73,7 +73,7 @@ open LiveActivities.xcodeproj
 ## Project Structure
 
 ```
-LiveActivities/
+Live Activities/
 ├── LiveActivities/              # Main app
 │   ├── ContentView.swift        # Main UI
 │   ├── StepTracker.swift        # Step tracking logic
@@ -124,7 +124,7 @@ Create an App Group to share data between the app and extension:
 
 ```swift
 let tracker = StepTracker()
-tracker.startTracking(goalSteps: 10000)
+tracker.startTracking(goalSteps: goalSteps)
 ```
 
 ### Pausing/Resuming
@@ -263,12 +263,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Apple's [ActivityKit documentation](https://developer.apple.com/documentation/activitykit)
 - SF Symbols for icons
 - CoreMotion framework for step tracking
-
-## Contact
-
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/yourusername/step-tracking-live-activities](https://github.com/yourusername/step-tracking-live-activities)
 
 ---
 
